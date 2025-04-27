@@ -1,7 +1,6 @@
 # Loan Portfolio Analysis
 
-This repository contains code for analyzing a loan portfolio, including credit risk assessment, derivative valuation, CVA analysis, and liquidity risk management.
-
+Hvem bryr seg?
 ## Project Structure
 
 - `loan_portfolio_analysis_final.py`: Main Python script for the analysis
