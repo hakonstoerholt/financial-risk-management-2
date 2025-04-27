@@ -1,6 +1,8 @@
 # Loan Portfolio Analysis
 
 Wallah Mashallah, røsk meg i ...
+
+Mulig dette må bort når jeg leverer til Mr. White Vinegar
 ## Project Structure
 
 - `loan_portfolio_analysis_final.py`: Main Python script for the analysis
