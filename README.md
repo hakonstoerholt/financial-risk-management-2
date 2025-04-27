@@ -1,6 +1,6 @@
 # Loan Portfolio Analysis
 
-Hvem bryr seg?
+Wallah Mashallah, røsk meg i ...
 ## Project Structure
 
 - `loan_portfolio_analysis_final.py`: Main Python script for the analysis
