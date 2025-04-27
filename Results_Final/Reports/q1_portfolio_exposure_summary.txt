@@ -1,0 +1,12 @@
+=== Q1: PORTFOLIO EXPOSURE SUMMARY ===
+
+Key Assumptions:
+ - Value is PV of remaining fixed payments.
+ - Discount rate is the simulated monthly rate for the period.
+
+Number of loans: 1000
+Number of simulations: 10000
+Average portfolio value at start Month 1: $43,606,736.29
+Average portfolio value at start Month 60: $806,309.15
+99th Percentile value at start Month 60: $807,859.35
+1st Percentile value at start Month 60: $804,294.21

@@ -1,0 +1,37 @@
+=== Q7: RISK MANAGEMENT RECOMMENDATIONS ===
+
+Key Assumptions Summary:
+ - CIR Rates (Simulated), Gaussian Copula Defaults (Corr=0.39), Recovery Rates (Loan=40%, Cpty=60%), Simplified CDS Bootstrap, ABS Spread Proxy, 5Y RF Discounting.
+
+Q7.a: Credit Risk Hedging and Liquidity Risks Faced
+ - Credit Risk Exposure: Significant. The portfolio faces substantial potential credit losses (Final EL ~$3,315,835, 99% VaR ~$5,174,620).
+ - Derivative Hedge: Recommended. The net cost including CVA ($995,234.28) is less than the expected present value of additional funding costs ($2,783,503.45) that would be incurred without the hedge. It provides a positive expected value and eliminates tail funding risk.
+ - Liquidity Risks Faced:
+   1. Funding Liquidity Risk: Potential need for costly capital if losses exceed the threshold (15% of DFV). This risk is mitigated (or eliminated if triggered) by purchasing the derivative.
+   2. Market Liquidity Risk: Significant cost to sell the portfolio quickly, especially in stress. Estimated final cost: Avg $0, Stress 99%/99% $0. The ABS proxy likely underestimates the true cost significantly.
+
+Q7.b: Other Risks to Consider
+ - Model Risk: Assumptions regarding interest rate model (CIR), default correlation (Gaussian copula, fixed rho), recovery rates (fixed), CVA calculation (simplified bootstrap, EPE paths), market liquidity proxy (ABS spreads), and constant discount rate may not hold.
+ - Prepayment Risk: Not modeled. Faster/slower prepayments affect portfolio value and duration.
+ - Operational Risk: Loan servicing issues, fraud, system failures.
+ - Systemic Risk / Market Environment: A broad market downturn could simultaneously increase defaults, decrease recovery rates, increase counterparty risk, widen market spreads, and make funding difficult (correlated impacts).
+ - Regulatory Risk: Changes in capital requirements or consumer lending regulations.
+ - Concentration Risk: Exposure concentrated in a specific sector (e.g., subprime auto loans), making the portfolio vulnerable to sector-specific downturns.
+
+Q7.c: Mitigating Counterparty and Liquidity Risks
+ - Counterparty Risk (Derivative): 
+   - Use collateral agreements (Credit Support Annex - CSA) with margin calls.
+   - Transact with high-quality counterparties; monitor their creditworthiness (e.g., CDS spreads).
+   - Diversify counterparty exposure if possible.
+   - Ensure CVA is accurately priced into the derivative cost.
+ - Funding Liquidity Risk:
+   - Maintain adequate capital buffers above regulatory minimums.
+   - Develop and test Contingency Funding Plans (CFPs) outlining actions during stress.
+   - Diversify funding sources (deposits, repo, credit lines).
+   - Conduct regular funding stress tests.
+ - Market Liquidity Risk:
+   - Hold a buffer of highly liquid assets.
+   - Explore potential for securitization to transform illiquid loans into more liquid securities (if feasible and economical).
+   - Establish committed credit lines that can be drawn if asset sales are too costly.
+   - Limit portfolio size relative to market depth.
+   - Conduct stress tests incorporating stressed liquidation costs and potential market freezes.

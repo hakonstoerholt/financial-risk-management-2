@@ -1,0 +1,32 @@
+=== Q6: MARKET LIQUIDITY RISK SUMMARY ===
+
+Key Assumptions:
+ - Historical ABS spreads used as proxy for loan portfolio liquidation costs.
+ - Liquidation cost = Remaining Value - Accumulated Credit Losses.
+ - Remaining Value = Default-Free Value - Accumulated Credit Losses.
+
+Q6.a & Q6.b: Liquidation Costs
+Average historical bid-ask spread (proxy): 1.0595%
+99th percentile historical bid-ask spread (proxy): 1.5414%
+Average expected liquidation cost at end (Month 60): $0.00
+Average stressed liquidation cost (99% spread, avg value) at end: $0.00
+99th percentile stressed liquidation cost (99% spread & 99% value) at end: $0.00
+See q6_market_liquidity.csv for monthly details.
+
+Q6.c: Discussion on Correlation Modeling (Value vs Spread)
+ - The current model assumes spreads are independent of the portfolio's value/losses.
+ - In reality, market stress often causes both portfolio value to decrease (due to higher defaults/discount rates) AND spreads to widen.
+ - This positive correlation (lower value, higher spread) represents wrong-way liquidity risk, amplifying liquidation costs in stress scenarios.
+ - Modeling this correlation is important for accurate stressed cost estimation. Methods include:
+   - Historical analysis: Correlate historical ABS index values/returns with spread changes.
+   - Copulas: Model the joint distribution of portfolio value drivers (e.g., rates, default factors) and spread drivers.
+   - Factor models: Link both portfolio value and spreads to common macroeconomic factors.
+
+Q6.d: Discussion on Appropriateness of ABS Spreads as Proxy
+ - Pros: Related asset class (securitized loans), represents secondary market transaction costs, historical data may be available.
+ - Cons:
+   - Diversification: ABS pools are typically more diversified than a single portfolio.
+   - Tranching: ABS spreads vary by tranche seniority; using an index might not match the specific risk profile.
+   - Liquidity Mismatch: ABS are generally more liquid than whole loan portfolios, especially individual loans.
+   - Portfolio Specifics: The actual portfolio's characteristics (e.g., subprime auto) might have significantly different liquidity.
+ - Conclusion: ABS spreads are an imperfect proxy. They likely *underestimate* the true liquidation cost, especially under stressed market conditions, as the portfolio is less liquid than traded ABS. The actual cost could be substantially higher.

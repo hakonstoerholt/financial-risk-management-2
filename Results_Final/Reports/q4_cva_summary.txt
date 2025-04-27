@@ -1,0 +1,16 @@
+=== Q4: CREDIT VALUATION ADJUSTMENT (CVA) SUMMARY ===
+
+Key Assumptions:
+ - Path-dependent EPE calculated for the derivative benefit leg.
+ - Simplified CDS bootstrapping (Spread/LGD, ignores accrual & rate effects).
+ - Counterparty Recovery Rate: 60%.
+ - Discounting uses 5Y risk-free rate.
+
+Q4.a: CVA Explanation
+ - CVA represents the market price of counterparty credit risk associated with the derivative.
+ - It is the expected loss due to the counterparty defaulting before fulfilling its obligations.
+ - Calculated as Sum[ EPE(t) * PD(t) * LGD * DF(t) ], where EPE is Expected Positive Exposure.
+
+Q4.b: CVA Calculation
+   Calculated CVA (using path-dependent EPE): $187,309.43
+   Total Net Cost of Derivative (Net Cost + CVA): $995,234.28

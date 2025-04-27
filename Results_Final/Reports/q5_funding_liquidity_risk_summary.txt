@@ -1,0 +1,17 @@
+=== Q5: FUNDING LIQUIDITY RISK SUMMARY ===
+
+Key Assumptions:
+ - Funding cost triggered if AccumLoss > 15% * DFV.
+ - Cost = 8% * Excess Loss (applied monthly).
+ - Discounting uses 5Y risk-free rate.
+
+Q5.a: Expected and Worst Case Additional Funding Cost
+Total Expected Additional Funding Cost (PV): $2,783,503.45
+See q5_funding_liquidity.csv for monthly flow details.
+
+Q5.b: Discussion on Derivative Purchase
+ - Total Net Cost of Derivative (incl. CVA): $995,234.28
+ - Total Expected Funding Cost (PV) without derivative: $2,783,503.45
+ - The derivative appears cost-effective from an expected value perspective, as its net cost is lower than the expected funding costs it avoids.
+ - Additionally, the derivative eliminates the tail risk of very high funding costs (represented by the 99% WC cost).
+ - Recommendation: Purchase the derivative, as it provides a positive expected value and hedges against funding stress.

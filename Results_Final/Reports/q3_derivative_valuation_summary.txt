@@ -1,0 +1,15 @@
+=== Q3: DERIVATIVE VALUATION SUMMARY (Single Trigger) ===
+
+Key Assumptions:
+ - Payoff occurs once at first trigger month.
+ - Cost = DFV at trigger.
+ - Benefit = 95% * DFV at trigger.
+ - Discounting uses 5Y risk-free rate.
+
+Q3.a: Expected Cost of Derivative (PV): $16,158,496.90
+Q3.b: Expected Benefit of Derivative (PV): $15,350,572.05
+   Net Cost (Cost - Benefit, PV, excl CVA): $807,924.84
+Percentage of simulations where trigger is hit: 100.00%
+Average month (1-60) when trigger is first hit: 37.22
+
+Note: Trigger frequency is 100% because accumulated losses generally increase while the portfolio value (DFV) amortizes towards zero, making it inevitable that the loss threshold (relative to current DFV) is eventually crossed.

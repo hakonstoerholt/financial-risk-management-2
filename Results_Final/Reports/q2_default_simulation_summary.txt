@@ -1,0 +1,23 @@
+=== Q2: DEFAULT SIMULATION SUMMARY ===
+
+Key Assumptions:
+ - Gaussian copula model for defaults.
+ - Correlation (Factor-Default): 0.39.
+ - EAD = Outstanding Principal.
+ - Recovery Rate: 40%.
+ - Amortization is deterministic.
+
+Q2.a: Accumulated Defaults
+Average accumulated defaults at end: 246.07
+Max accumulated defaults at end: 486
+
+Q2.b: Accumulated Credit Losses
+Average accumulated loss at end: $3,315,834.69
+Max accumulated loss at end: $7,428,331.90
+
+Q2.c: VaR, Expected Loss, Total Value
+See q2_credit_risk_stats.csv for detailed monthly data
+
+Q2.d: Right-Way vs Wrong-Way Risk
+Average Monthly Correlation (Loss vs Factor): -0.7378
+Negative correlation suggests potential RIGHT-WAY risk (higher factor associated with lower losses).
